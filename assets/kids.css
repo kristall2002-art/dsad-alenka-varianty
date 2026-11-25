@@ -68,3 +68,17 @@
   .svlink{padding:16px;gap:12px}.svlink .svi{flex-basis:42px;height:42px}.svlink .arr{display:none}
   .edimgs .ill{height:200px}
 }
+/* шапка: длинное «Сведения об образовательной организации» в меню */
+.logo{flex:0 0 auto}.logo b{white-space:nowrap}.logo small{white-space:nowrap}
+.hdr .wrap{gap:20px}
+.hdr .nav{gap:20px}.hdr .nav a{white-space:nowrap;font-size:.95rem}
+.hdr .nav a[data-sv]{color:var(--accent)}
+@media (max-width:1360px){.hdr .hphone.d{display:none}}
+@media (max-width:1180px){
+  .hdr .nav,.hdr .a11y.d{display:none}
+  .hdr .burger{display:block}
+  .hdr.open .nav{display:flex;position:absolute;left:0;right:0;top:100%;flex-direction:column;gap:0;background:var(--hbg,var(--bg));padding:8px 24px 18px;box-shadow:0 20px 30px -20px rgba(0,0,0,.4)}
+  .hdr.open .nav a{padding:12px 0;border-bottom:1px solid rgba(127,127,127,.2);white-space:normal}
+  .hdr.center .wrap{flex-wrap:nowrap;justify-content:flex-start;padding-top:0}
+  .hdr.center .logo{align-items:flex-start;width:auto}
+}
