@@ -82,3 +82,11 @@
   .hdr.center .wrap{flex-wrap:nowrap;justify-content:flex-start;padding-top:0}
   .hdr.center .logo{align-items:flex-start;width:auto}
 }
+@media (max-width:1180px){
+  body.sb .side{display:none}
+  body.sb .sbmain{margin-left:0}
+  body.sb .mobonly{display:block}
+  .svgrid{grid-template-columns:minmax(0,1fr)}
+  .svside{position:static}
+}
+.csplit .card .btns .btn{white-space:normal;text-align:center}
